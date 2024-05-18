@@ -1,0 +1,106 @@
+// keyword  vs word
+Keyword reserved words in a language
+words have no meaning in laguage
+
+//VARIABLE AND CONSTANT
+Variabe are used to store data in program .It value can be change
+constant don't change
+const-used to assing constant value to a variable
+var-we can change variable store in var
+
+//HOISTING
+Variable and Function are hoisted in Javascript
+Variable  and Function can be used before it is declared
+ Examples:
+ 1>var x=5;                     output
+ var y=7;                     x=5
+ console.log("x=",x);         y=7
+  console.log("y=",y);
+  
+2>var x=5;
+console.log("x="x);          output:
+console.log("y=",y);         x=5
+var y =7                     y=undefined--->why? only declaration is hoited not intialization
+
+3>
+  var x=5;                     output
+ var y;                       x=5
+ console.log("x=",x);         y=undefined
+ console.log("y=",y);
+ y=7;
+ This happens because of phase I of memory creation phase in which in this all the variables are allocated undefined value
+undefined- exist but value is not known
+notdefined- doesnot exist.
+
+//TYPES in js
+
+ //Primitive and Refernce
+ 
+ primitives= string ,null,undefined,boolean // actual copy is created
+ reference=[ ],{ },( ) //data on copy is directly not copied but refrences is passed 
+examples of refernces:
+                                   output
+var a=[12,13]                       b=[12]
+var b=a;//reference is passed       but a=[12] because refernce was passed on
+b.pop();
+
+//CONDITIONALS 
+if- else   else if
+
+//Loops 
+1>for     //see syntax
+2>while
+
+//FUNCTIONS
+  enhances code reusability.
+ex-
+let x = myFunction(4, 3);
+function myFunction(a, b) {
+  return a * b;
+}
+arguments-real value given to function
+parameters-variables that store the value of the arguments
+
+//Arrays
+used to stotre related data.
+var arr=[11,45,67,54]
+//PUSH POP SHIFT UNSHIFT SPLICE
+push(): Add elements to the end of an Array
+pop(): Remove an element from end of an Array
+shift(): Remove an Element from the front of an Array
+unshift(): Add elements to the front of an Array
+ splice
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];   
+// At position 2, remove 1 item, add "Lemon" and "Kiwi"
+fruits.splice(2, 1, "Lemon", "Kiwi");
+output
+he splice() method adds or removes array elements.
+Banana,Orange,Lemon,Kiwi,Mango
+
+//Objects
+have key and value pair
+All JavaScript values, except primitives, are objects
+const person = {firstName:"John", 
+lastName:"Doe", age:50, eyeColor:"blue"};
+
+JavaScript Objects are Mutable
+const x = person;  // Will not create a copy of person.
+The object x is not a copy of person. It is person. 
+Both x and person are the same object.
+const person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:50, eyeColor:"blue"
+}
+//Updating Object 
+const x = person;
+x.age = 10;      // Will change both x.age and person.age
+
+
+ 
+
+
+
+  
+ 
