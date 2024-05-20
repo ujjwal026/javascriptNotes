@@ -24,4 +24,13 @@ function abcd(){
     console.log(i);//beyond scope unacceptable i is not defined
 
 }
-var & const
+--window object diff
+--execution context
+--lexical environment
+--how to copy reference value ([...])
+--thruthly vs falsey
+--for each ,for in ,do while
+--callbacks funcn
+--first class function
+--how are arrays made behind js(hint they are object)
+--how to delete props in onject(delete)
