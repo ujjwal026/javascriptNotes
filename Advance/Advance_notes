@@ -1,1 +1,27 @@
+//Var let const difference
+       
+js-> es5 and Es6
+Es5 -->var
+Es6-->let and const
+we are currently using Es5 and Es6 both in  time
+old js-->var
+new js-->let and const
 
+Var and con st is function scoped i.e var can be used in anywhere inside the function
+function abcd(){
+   for(var i=1;i<12;i++){
+    console.log(i); //acceptable
+   }
+    console.log(i);//it is acceptable and output will be 12 here;
+
+}
+
+let is braces scoped
+function abcd(){
+   for(let i=1;i<12;i++){
+    console.log(i);//acceptable
+   }
+    console.log(i);//beyond scope unacceptable i is not defined
+
+}
+var & const
